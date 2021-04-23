@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>NuCamp: A Better Way To Camp</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/QAHThumb.jpg" class="img-fluid" /></a>
+                </div>
+                <div class="col">
+                    <h1>QAHelper</h1>
+                    <h3>Inspection Made Easy</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Start Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/QAHThumb.jpg" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#QAHNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="QAHNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html"><i class="fa fa-info fa-lg"></i> FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Specs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bugReport.html"><i class="fa fa-address-card fa-lg"></i> Report a Bug</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <div class="container">
+        <!--Start Breadcrumbs-->
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Specs</li>
+                </ol>
+                <h2>Product Specifications</h2>
+                <hr />
+            </div>
+        </div>
+        <!--End Breadcrumbs-->
+
+        <div class="container-fluid">
+            <form>
+              <div class="form-group row">
+                <label for="productNo" class="col-sm-2 col-form-label">Product #</label>
+                <div class="col-sm-4">
+                  <select name="productNo" id="productNo" class="form-control">
+                    <option selected>Select Product #...</option>
+                    <option value="000000001">000000001</option>
+                    <option value="000000002">000000002</option>
+                    <option value="000000003">000000003</option>
+                    <option value="000000004">000000004</option>
+                    <option value="000000005">000000005</option>
+                  </select>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Go</button>
+                  </div>
+              </div>
+            </form>
+        </div>
+
+        <div class="row row-content">
+            <div class="col">
+                <h3>Product Details</h3>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" href="#info" role="tab" data-toggle="tab">Product Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inspectionPoints" role="tab" data-toggle="tab">Inspection Points</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#defects" role="tab" data-toggle="tab">Common Defects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recentIssues" role="tab" data-toggle="tab">Recent Issues</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade show active" id="info">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="bg-primary text-light">
+                                        <th>Spec</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-primary">
+                                    <tr>
+                                        <th>Product #</th>
+                                        <td>000000001</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Customer</th>
+                                        <td>BestCustomer</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Maj. Dia. (in)</th>
+                                        <td>3.5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Min. Dia. (in)</th>
+                                        <td>3.5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Height (in)</th>
+                                        <td>3.0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Boxes/Layer</th>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Layers/Pallet</th>
+                                        <td>10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="inspectionPoints">
+                        <div class="container-fluid">
+                            <div class="row mb-3 mt-3">
+                                <div class="col-sm-2 text-center my-auto">
+                                    <span class="align-middle">Inspection Point
+                                </div>
+                                <div class="col-5 text-center my-auto">
+                                    <span class="align-middle">Inspection Description</span>
+                                </div>
+                                <div class="col-auto text-center my-auto">
+                                    Image
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row mb-3 mt-3">
+                                <div class="col text-center my-auto">
+                                    <span class="align-middle">1</span>
+                                </div>
+                                <div class="col-5 text-center my-auto">
+                                    <h4>Top of Part</h4>
+                                    <p class="d-none d-sm-block">Check the top of the product for any cuts or dents.</p>
+                                </div>
+                                <div class="col-5">
+                                    <img class="d-block w-100" src="img/1.png" />
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row mb-3 mt-3">
+                                <div class="col text-center my-auto">
+                                    2
+                                </div>
+                                <div class="col-5 text-center my-auto">
+                                    <h4>Sides of Part</h4>
+                                    <p class="d-none d-sm-block">Check the sides of the product for any cracks or holes.</p>
+                                </div>
+                                <div class="col-5">
+                                    <img class="d-block w-100" src="img/2.png" />
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row mb-3 mt-3">
+                                <div class="col text-center my-auto">
+                                   3
+                                </div>
+                                <div class="col-5 text-center my-auto">
+                                    <h4>Bottom of Part</h4>
+                                    <p class="d-none d-sm-block">Check the bottom of the product for any dents or gouges.</p>
+                                </div>
+                                <div class="col-5">
+                                    <img class="d-block w-100" src="img/3.png" />
+                                </div>
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="defects">
+                        <div class="row row-content">
+                            <div class="col">
+                                
+                                <h3>Common Defects</h3>
+                
+                                <div id="accordion">
+                
+                                    <div class="card">
+                                        <div role="tab" class="card-header">
+                                            <h4><a data-toggle="collapse" data-target="#defect1">Edge Chips</a></h4>
+                                            <div class="collapse show" id="defect1" data-parent="#accordion">
+
+                                                <div class="card-body">
+
+                                                    <div class="row">
+                                                        <p>Edge chips most commonly occur when parts are dropped or mishandled</p>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p>Good</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p>Bad</p>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <img class="d-block w-100" src="img/1.png" />
+                                                        </div>
+                                                         <div class="col-6">
+                                                            <img class="d-block w-100" src="img/1.png" />
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card">
+                                        <div role="tab" class="card-header">
+                                            <h4><a data-toggle="collapse" data-target="#defect2" class="collapsed">Dents</a></h4>
+                                            <div class="collapse" id="defect2" data-parent="#accordion">
+                                                <div class="card-body">
+
+                                                    <div class="row">
+                                                        <p>Dents most commonly occur when parts are dropped</p>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p>Good</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p>Bad</p>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <img class="d-block w-100" src="img/2.png" />
+                                                        </div>
+                                                         <div class="col-6">
+                                                            <img class="d-block w-100" src="img/2.png" />
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card">
+                                        <div role="tab" class="card-header">
+                                            <h4><a data-toggle="collapse" data-target="#defect3" class="collapsed">Gouges</a></h4>
+                                            <div class="collapse" id="defect3" data-parent="#accordion">
+                                                <div class="card-body">
+
+                                                    <div class="row">
+                                                        <p>Gouges most commonly occur when parts are hit against the sides of tools or workspaces</p>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p>Good</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p>Bad</p>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <img class="d-block w-100" src="img/3.png" />
+                                                        </div>
+                                                         <div class="col-6">
+                                                            <img class="d-block w-100" src="img/3.png" />
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card">
+                                        <div role="tab" class="card-header">
+                                            <h4><a data-toggle="collapse" data-target="#defect4" class="collapsed">Cracks</a></h4>
+                                            <div class="collapse" id="defect4" data-parent="#accordion">
+                                                <div class="card-body">
+
+                                                    <div class="row">
+                                                        <p>Crack most commonly occur when parts are cooled too quickly after coming out of the oven</p>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p>Good</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p>Bad</p>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <img class="d-block w-100" src="img/4.png" />
+                                                        </div>
+                                                         <div class="col-6">
+                                                            <img class="d-block w-100" src="img/4.png" />
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="recentIssues">
+                        <h3 class="mt-3">Recent Scrap</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="table-dark text-dark">
+                                        <th>Date</th>
+                                        <th>Lot #</th>
+                                        <th>Scrap Type</th>
+                                        <th># of Pieces</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-dark">
+                                    <tr>
+                                        <th>1/1/2021</th>
+                                        <td>123456789</td>
+                                        <td>Edge Chips</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2/14/2021</th>
+                                        <td>123456000</td>
+                                        <td>Dents</td>
+                                        <td>47</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3/15</th>
+                                        <td>123456999</td>
+                                        <td>Side Gouge</td>
+                                        <td>23</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Specs</a></li>
+                        <li><a href="bugReport.html">Bug Report</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel+:12345556789"><i class="fa fa-phone"></i> 1-234-555-6789</a><br>
+                    <a role="button" class="btn btn-link" href="mailto:BugReport@QAHelper.com"><i class="fa fa-envelope-o"></i> BugReport@QAHelper.com</a>
+                    </div>
+           </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

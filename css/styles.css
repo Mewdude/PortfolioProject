@@ -1,0 +1,58 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Lobster", cursive; }
+
+h2 {
+  color: #3046C5; }
+
+h3 {
+  color: black; }
+
+header h2 {
+  color: #2d98fd; }
+
+.site-footer {
+  background-image: linear-gradient(white, #2d98fd);
+  padding: 20px 0; }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #82b460, #3046C5, #570808);
+  color: white; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: #11138a; }
+
+.tab {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: solid #82b460; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  /* z-index controls the forward/back of the buttons. This makes sure these buttons are on top. */ }
+
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+
+#loginModal .modal-header {
+  background-color: #11138a;
+  color: white; }
