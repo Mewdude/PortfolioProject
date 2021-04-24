@@ -2,8 +2,8 @@ $color-primary: #3046C5;
 $color-secondary: #82b460;
 $color-pale: #2d98fd;
 $color-mid: #11138a;
-$color-dark: #570808;
-$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-dark: #154409;
+$color-black-transparent: rgba(34, 12, 12, 0.329);
 $color-teal: #17A2B8;
 
 $body-font: "Open Sans", sans-serif;
@@ -15,7 +15,9 @@ body {
 h1,h2,h3{
 font-family: $header-font;
 }
-
+h1{
+    color: white ;
+}
 h2{
     color: $color-primary ;
 }
@@ -29,8 +31,10 @@ header {
     }
 }
 
+
+
 .site-footer{
-    background-image: linear-gradient( white,$color-pale);
+    background-image: linear-gradient( $color-primary,$color-dark);
     padding: 20px 0;
 }
 
@@ -63,6 +67,11 @@ header {
 
 .carousel{
     border: solid $color-secondary;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
 }
 
 #carouselButton{
