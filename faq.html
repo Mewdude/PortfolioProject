@@ -1,221 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="index.html"><img src="img/QAHThumb.jpg" class="img-fluid" /></a>
-                </div>
-                <div class="col">
-                    <h1>QAHelper</h1>
-                    <h3>Inspection Made Easy</h3>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <a href="index.html"
+              ><img src="img/QAHThumb.jpg" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col">
+            <h1>QAHelper</h1>
+            <h3>Inspection Made Easy</h3>
+          </div>
         </div>
+      </div>
     </header>
 
     <!--Start Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/QAHThumb.jpg" height="30" width="30" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#QAHNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/QAHThumb.jpg" height="30" width="30"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#QAHNavbar"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="QAHNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="specs.html"><i class="fa fa-list fa-lg"></i> Specs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="bugReport.html"><i class="fa fa-address-card fa-lg"></i> Report a Bug</a></li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="QAHNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                ><i class="fa fa-home fa-lg"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa fa-info fa-lg"></i> FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="specs.html"
+                ><i class="fa fa-list fa-lg"></i> Specs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bugReport.html"
+                ><i class="fa fa-address-card fa-lg"></i> Report a Bug</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!--End Navbar-->
 
     <div class="container">
-        <!--Start Breadcrumbs-->
-        <div class="row">
-            <div class="col">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">FAQ</li>
-                </ol>
-                <h2>Frequently Asked Questions</h2>
-                <hr />
-            </div>
+      <!--Start Breadcrumbs-->
+      <div class="row">
+        <div class="col">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">FAQ</li>
+          </ol>
+          <h2>Frequently Asked Questions</h2>
+          <hr />
         </div>
-        <!--End Breadcrumbs-->
+      </div>
+      <!--End Breadcrumbs-->
 
-              <!--Start Accordion Style Display-->
-            <div class="row row-content">
-                <div class="col">
-                    
-                    <h3>Using the Specs Page</h3>
-    
-                    <div id="accordion">
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#findProduct">How do I find my product?</a></h4>
-                                <div class="collapse show" id="findProduct" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">On the <a href="specs.html">Specs Page</a>, simply type your product code into the search bar and it will display your information</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#notShown" class="collapsed">My product isn't shown, what do I do?</a></h4>
-                                <div class="collapse" id="notShown" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">If your product code is not available, please submit a Bug Report <a href="bugReport.html">Here</a> and our team will work immediately to add it to your repository</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#picsOutdated" class="collapsed">The pictures associated with my product are outdated / incorrect</a></h4>
-                                <div class="collapse" id="picsOutdated" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">If your product information needs to be updated, please sumbmit the relevant pictures and documentation to our team at <a href="mailto:campsites@nucamp.co">BugReport@QAHelper.com</a> or by submitting a <a href="bugReport.html">Bug Report</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#specsContact" class="collapsed">My issue is not listed here, who can I talk to?</a></h4>
-                                <div class="collapse" id="specsContact" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">If you need additional support, or the answer to your question is not here, please feel free to contact our team at: <a href="mailto:campsites@nucamp.co">BugReport@QAHelper.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-    
+      <!--Start Accordion Style Display-->
+      <div class="row row-content">
+        <div class="col">
+          <h3>Using the Specs Page</h3>
+
+          <div id="accordion">
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a data-toggle="collapse" data-target="#findProduct"
+                    >How do I find my product?</a
+                  >
+                </h4>
+                <div
+                  class="collapse show"
+                  id="findProduct"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      On the <a href="specs.html">Specs Page</a>, simply type
+                      your product code into the search bar and it will display
+                      your information
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
 
-            <div class="row row-content">
-                <div class="col">
-                    
-                    <h3>Filing A Bug Report</h3>
-    
-                    <div id="accordion">
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#nonOpMachine">I'm not an operator, what machine / shift should I use?</a></h4>
-                                <div class="collapse" id="nonOpMachine" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">Even if you are not an operator, please enter the current shift and the machine that the product in question was run on to better help us identify and fix your problem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#otherShift" class="collapsed">I found a bug on my shift, but I'm pretty sure it happened on a different shift. What should I do?</a></h4>
-                                <div class="collapse" id="otherShift" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">If you encounter a bug that should have been addressed on a previous shift, please note that in the bug description. You should still press the relevant radio button for your shift on the form.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#whyPhone" class="collapsed">Why do I need to supply my phone number?</a></h4>
-                                <div class="collapse" id="whyPhone" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">Sometimes, our Customer Service team may need more information related to your problem. If that happens, we will attempt to contact you via your email and phone number. Providing this information ensures a more timely response to your report.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div role="tab" class="card-header">
-                                <h4><a data-toggle="collapse" data-target="#bugContact" class="collapsed">My issue is not listed here, who can I talk to?</a></h4>
-                                <div class="collapse" id="bugContact" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p class="d-none d-sm-block">If you need additional support, or the answer to your question is not here, please feel free to contact our team at: <a href="mailto:campsites@nucamp.co">BugReport@QAHelper.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-    
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a
+                    data-toggle="collapse"
+                    data-target="#notShown"
+                    class="collapsed"
+                    >My product isn't shown, what do I do?</a
+                  >
+                </h4>
+                <div class="collapse" id="notShown" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      If your product code is not available, please submit a Bug
+                      Report <a href="bugReport.html">Here</a> and our team will
+                      work immediately to add it to your repository
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!--End Accordion Style Display-->
 
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a
+                    data-toggle="collapse"
+                    data-target="#picsOutdated"
+                    class="collapsed"
+                    >The pictures associated with my product are outdated /
+                    incorrect</a
+                  >
+                </h4>
+                <div
+                  class="collapse"
+                  id="picsOutdated"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      If your product information needs to be updated, please
+                      sumbmit the relevant pictures and documentation to our
+                      team at
+                      <a href="mailto:campsites@nucamp.co"
+                        >BugReport@QAHelper.com</a
+                      >
+                      or by submitting a <a href="bugReport.html">Bug Report</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a
+                    data-toggle="collapse"
+                    data-target="#specsContact"
+                    class="collapsed"
+                    >My issue is not listed here, who can I talk to?</a
+                  >
+                </h4>
+                <div
+                  class="collapse"
+                  id="specsContact"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      If you need additional support, or the answer to your
+                      question is not here, please feel free to contact our team
+                      at:
+                      <a href="mailto:campsites@nucamp.co"
+                        >BugReport@QAHelper.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-content">
+        <div class="col">
+          <h3>Filing A Bug Report</h3>
+
+          <div id="accordion">
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a data-toggle="collapse" data-target="#nonOpMachine"
+                    >I'm not an operator, what machine / shift should I use?</a
+                  >
+                </h4>
+                <div
+                  class="collapse"
+                  id="nonOpMachine"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      Even if you are not an operator, please enter the current
+                      shift and the machine that the product in question was run
+                      on to better help us identify and fix your problem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a
+                    data-toggle="collapse"
+                    data-target="#otherShift"
+                    class="collapsed"
+                    >I found a bug on my shift, but I'm pretty sure it happened
+                    on a different shift. What should I do?</a
+                  >
+                </h4>
+                <div class="collapse" id="otherShift" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      If you encounter a bug that should have been addressed on
+                      a previous shift, please note that in the bug description.
+                      You should still press the relevant radio button for your
+                      shift on the form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a
+                    data-toggle="collapse"
+                    data-target="#whyPhone"
+                    class="collapsed"
+                    >Why do I need to supply my phone number?</a
+                  >
+                </h4>
+                <div class="collapse" id="whyPhone" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      Sometimes, our Customer Service team may need more
+                      information related to your problem. If that happens, we
+                      will attempt to contact you via your email and phone
+                      number. Providing this information ensures a more timely
+                      response to your report.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a
+                    data-toggle="collapse"
+                    data-target="#bugContact"
+                    class="collapsed"
+                    >My issue is not listed here, who can I talk to?</a
+                  >
+                </h4>
+                <div class="collapse" id="bugContact" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="d-none d-sm-block">
+                      If you need additional support, or the answer to your
+                      question is not here, please feel free to contact our team
+                      at:
+                      <a href="mailto:campsites@nucamp.co"
+                        >BugReport@QAHelper.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Accordion Style Display-->
     </div>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="specs.html">Specs</a></li>
-                        <li><a href="bugReport.html">Bug Report</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel+:12345556789"><i class="fa fa-phone"></i> 1-234-555-6789</a><br>
-                    <a role="button" class="btn btn-link" href="mailto:BugReport@QAHelper.com"><i class="fa fa-envelope-o"></i> BugReport@QAHelper.com</a>
-                    </div>
-           </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="specs.html">Specs</a></li>
+              <li><a href="bugReport.html">Bug Report</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <a
+              class="btn btn-social-icon btn-instagram"
+              href="http://instagram.com/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              href="http://facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-youtube"
+              href="http://youtube.com/"
+              ><i class="fa fa-youtube"></i
+            ></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a role="button" class="btn btn-link" href="tel+:12345556789"
+              ><i class="fa fa-phone"></i> 1-234-555-6789</a
+            ><br />
+            <a
+              role="button"
+              class="btn btn-link"
+              href="mailto:BugReport@QAHelper.com"
+              ><i class="fa fa-envelope-o"></i> BugReport@QAHelper.com</a
+            >
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-</body>
-
+  </body>
 </html>
